@@ -1,0 +1,41 @@
+.note-container {
+    display: flex;
+    align-items: flex-start; /* Mengatur agar konten berada di sebelah kiri */
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.note-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.note-content {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.note-date {
+    font-size: 14px;
+    color: #777;
+}
+
+.delete-button {
+    padding: 8px 16px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}

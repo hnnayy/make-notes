@@ -1,0 +1,41 @@
+import React from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
+import ProtectedRoute from "./components/ProtectedRoute";
+
+function Logout() {
+  localStorage.clear(); // Menghapus semua item dari localStorage
+  return <Navigate to="/login" />; // Mengarahkan ke halaman login
+}
+
+function RegisterAndLogout() {
+  localStorage.clear(); // Menghapus semua item dari localStorage
+  return <Register />; // Merender komponen Register
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navigate to="/home" />} /> {/* Redirect ke home */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<RegisterAndLogout />} />
+        <Route
+          path="/home"
+          element={
+            <ProtectedRoute>
+              <Home />
+            </ProtectedRoute>
+          }
+        />
+        <Route path="*" element={<NotFound />} />
+        <Route path="/logout" element={<Logout />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;

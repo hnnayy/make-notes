@@ -1,0 +1,29 @@
+1. asgiref: Implementasi referensi untuk standar ASGI, menyediakan alat untuk mengelola concurrency dan sinkronisasi.
+asgiref
+
+2. Django: Framework web berbasis Python yang mendukung pengembangan cepat dan desain yang bersih serta pragmatis.
+Django
+
+3. django-cors-headers: Aplikasi Django untuk menangani header server yang diperlukan untuk Cross-Origin Resource Sharing (CORS).
+django-cors-headers
+
+4. djangorestframework: Toolkit yang kuat dan fleksibel untuk membangun Web API dengan Django.
+djangorestframework
+
+5. djangorestframework-simplejwt: Plugin autentikasi JSON Web Token untuk Django REST framework.
+djangorestframework-simplejwt
+
+6. PyJWT: Library Python untuk membuat, memverifikasi, dan menguraikan JSON Web Tokens (JWT).
+PyJWT
+
+7. pytz: Definisi Zona Waktu Dunia untuk Python, membawa database zona waktu Olson ke Python.
+pytz
+
+8. sqlparse: Parser SQL non-validating untuk Python, berguna untuk memformat dan menguraikan pernyataan SQL.
+sqlparse
+
+9. psycopg2-binary: Adaptor database PostgreSQL untuk Python, menyediakan komunikasi yang efisien dengan database PostgreSQL.
+psycopg2-binary
+
+10. python-dotenv: Membaca pasangan kunci-nilai dari file .env dan menambahkannya ke variabel lingkungan untuk pengelolaan konfigurasi yang mudah.
+python-dotenv
